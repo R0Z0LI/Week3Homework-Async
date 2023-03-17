@@ -1,22 +1,36 @@
-span {
-  padding: 10px;
-  width: 10rem;
-  text-align: left;
-}
-
 div:nth-child(2n) {
-  background-color: grey;
+  background-color: rgb(210, 204, 204);
 }
 
 .showData {
   box-sizing: border-box;
   border: 1px solid black;
+}
+.showData div:first-child {
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.showData div:first-child span:first-child {
+  border: none;
 }
 .showData div {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
+}
+.showData div span:first-child {
+  margin: 5px;
+  width: 4rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.showData div span {
+  padding: 5px;
+  width: 10rem;
+  word-wrap: break-word;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
