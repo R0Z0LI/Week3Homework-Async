@@ -5,19 +5,19 @@ div:nth-child(2n) {
 .showData {
   box-sizing: border-box;
 
-  div:first-child {
+  .row:first-child {
     font-size: 20px;
     font-weight: bold;
     display: flex;
     align-items: flex-end;
 
-    span:first-child {
+    .cell:first-child {
       margin: 0;
       width: 4rem;
     }
   }
 
-  div {
+  .row {
     border: 1.5px solid rgb(169, 157, 157);
     display: flex;
     width: 100%;
@@ -26,12 +26,12 @@ div:nth-child(2n) {
     align-items: center;
     flex-direction: row;
 
-    span:first-child {
+    .cell:first-child {
       margin: 5px;
       width: 4rem;
     }
 
-    span {
+    .cell {
       padding: 5px;
       width: 10rem;
       word-wrap: break-word;

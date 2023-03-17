@@ -26,18 +26,22 @@ createTable = () => {
   const showData = document.getElementById("showData");
 
   const headRow = document.createElement("div");
+  headRow.classList.add("row");
   showData.appendChild(headRow);
   for (let i = 0; i < col.length; i++) {
     const headCell = document.createElement("span");
+    headCell.classList.add("cell");
     headCell.innerHTML = col[i];
     headRow.appendChild(headCell);
   }
 
   for (let i = 0; i < data.length; i++) {
     const row = document.createElement("div");
+    row.classList.add("row");
     showData.appendChild(row);
     for (let j = 0; j < col.length; j++) {
       const cell = document.createElement("span");
+      cell.classList.add("cell");
       if (j === 0) {
         const img = document.createElement("img");
         img.src = data[i][col[j]];
